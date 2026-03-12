@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/tracking-plan",
+      "destination": "https://e3-tracking.vercel.app"
+    },
+    {
+      "source": "/tracking-plan/:match*",
+      "destination": "https://e3-tracking.vercel.app/:match*"
+    }
+  ]
+}
