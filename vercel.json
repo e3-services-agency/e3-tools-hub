@@ -2,13 +2,14 @@
   "redirects": [
     {
       "source": "/tracking-plan",
-      "destination": "https://e3-tracking.vercel.app",
+      "destination": "/tracking-plan/",
       "permanent": false
-    },
+    }
+  ],
+  "rewrites": [
     {
-      "source": "/tracking-plan/:path*",
-      "destination": "https://e3-tracking.vercel.app/:path*",
-      "permanent": false
+      "source": "/tracking-plan/(.*)",
+      "destination": "https://e3-tracking.vercel.app/$1"
     }
   ]
 }
