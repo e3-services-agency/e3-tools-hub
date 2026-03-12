@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/tracking-plan",
-      "destination": "https://e3-tracking.vercel.app"
+      "destination": "https://e3-tracking.vercel.app/"
     },
     {
-      "source": "/tracking-plan/:match*",
-      "destination": "https://e3-tracking.vercel.app/:match*"
+      "source": "/tracking-plan/:path*",
+      "destination": "https://e3-tracking.vercel.app/:path*"
     }
   ]
 }
