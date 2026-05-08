@@ -36,9 +36,18 @@
 
 <body>
   <iframe
-    src="https://cdn.exponea.com/sunday/s/eyJjdXN0b21lcl9pZCI6IjY4Mjc0N2IxMDRmZDUxOTJjN2FjNThmOSIsInN1cnZleV9pZCI6IjY5ZTljNjk3MjM0ZGVmZDY2MGE4YzliMiJ9.kkXDPygbE6_VlCB140XYGjT0Q2E"
+    id="sunday-natural-survey-iframe"
     title="Sunday Natural survey iframe test"
     loading="eager">
   </iframe>
+
+  <script>
+    const surveyUrl = "https://cdn.exponea.com/sunday/s/eyJjdXN0b21lcl9pZCI6IjY4Mjc0N2IxMDRmZDUxOTJjN2FjNThmOSIsInN1cnZleV9pZCI6IjY5ZTljNjk3MjM0ZGVmZDY2MGE4YzliMiJ9.kkXDPygbE6_VlCB140XYGjT0Q2E";
+
+    const parentUrl = encodeURIComponent(window.location.href);
+
+    document.getElementById("sunday-natural-survey-iframe").src =
+      surveyUrl + "?parent_url=" + parentUrl;
+  </script>
 </body>
 </html>
